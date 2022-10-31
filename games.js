@@ -14,7 +14,7 @@ const games = {
                 }
                 return value;
             };
-            loadObj = JSON.parse(decodeURIComponent(escape(atob(str))), reviver);
+            loadObj = JSON.parse(decodeURIComponent(escape(atob(save))), reviver);
         }
     }
 }
