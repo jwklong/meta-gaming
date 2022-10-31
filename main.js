@@ -11,3 +11,13 @@ function checkGoals() {
     }
     return completedGoals
 }
+
+function totalGoals() {
+    goals = 0
+    for (game of games) {
+        goals += game.goals.length
+    }
+    return goals
+}
+
+document.getElementById('totalGoals').innerHTML = checkGoals()+"/"+totalGoals()
